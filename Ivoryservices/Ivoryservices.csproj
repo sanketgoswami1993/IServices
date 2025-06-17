@@ -1,0 +1,1033 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+    <ItemGroup>
+      <Content Remove="wwwroot\about.html" />
+      <Content Remove="wwwroot\contact.html" />
+      <Content Remove="wwwroot\css\style.css" />
+      <Content Remove="wwwroot\css\style.min.css" />
+      <Content Remove="wwwroot\img\about.jpg" />
+      <Content Remove="wwwroot\img\blog-1.jpg" />
+      <Content Remove="wwwroot\img\blog-2.jpg" />
+      <Content Remove="wwwroot\img\blog-3.jpg" />
+      <Content Remove="wwwroot\img\carousel-1.jpg" />
+      <Content Remove="wwwroot\img\carousel-2.jpg" />
+      <Content Remove="wwwroot\img\carousel-3.jpg" />
+      <Content Remove="wwwroot\img\construction-1.jpg" />
+      <Content Remove="wwwroot\img\construction-2.jpeg" />
+      <Content Remove="wwwroot\img\construction-3.webp" />
+      <Content Remove="wwwroot\img\construction4.webp" />
+      <Content Remove="wwwroot\img\construction5.png" />
+      <Content Remove="wwwroot\img\design1.webp" />
+      <Content Remove="wwwroot\img\design2.jfif" />
+      <Content Remove="wwwroot\img\design3.jpg" />
+      <Content Remove="wwwroot\img\design4.jpg" />
+      <Content Remove="wwwroot\img\designe5.jpg" />
+      <Content Remove="wwwroot\img\ep1.jfif" />
+      <Content Remove="wwwroot\img\ep2.jpeg" />
+      <Content Remove="wwwroot\img\ep3.jfif" />
+      <Content Remove="wwwroot\img\ep5.jpeg" />
+      <Content Remove="wwwroot\img\feature.jpg" />
+      <Content Remove="wwwroot\img\Flowchart Symbols.html" />
+      <Content Remove="wwwroot\img\Flowchart Symbols_files\basic-symbols.jpg" />
+      <Content Remove="wwwroot\img\portfolio-1.jpg" />
+      <Content Remove="wwwroot\img\portfolio-2.jpg" />
+      <Content Remove="wwwroot\img\portfolio-3.jpg" />
+      <Content Remove="wwwroot\img\portfolio-4.jpg" />
+      <Content Remove="wwwroot\img\portfolio-5.jpg" />
+      <Content Remove="wwwroot\img\portfolio-6.jpg" />
+      <Content Remove="wwwroot\img\s1.jfif" />
+      <Content Remove="wwwroot\img\s2moving.webp" />
+      <Content Remove="wwwroot\img\s3.jpg" />
+      <Content Remove="wwwroot\img\s4.jfif" />
+      <Content Remove="wwwroot\img\s4.webp" />
+      <Content Remove="wwwroot\img\team-1.jpg" />
+      <Content Remove="wwwroot\img\team-2.jpg" />
+      <Content Remove="wwwroot\img\team-3.jpg" />
+      <Content Remove="wwwroot\img\team-4.jpg" />
+      <Content Remove="wwwroot\img\testimonial-1.jpg" />
+      <Content Remove="wwwroot\img\testimonial-2.jpg" />
+      <Content Remove="wwwroot\img\testimonial-3.jpg" />
+      <Content Remove="wwwroot\img\testimonial.jpg" />
+      <Content Remove="wwwroot\img\user.jpg" />
+      <Content Remove="wwwroot\index.html" />
+      <Content Remove="wwwroot\js\main.js" />
+      <Content Remove="wwwroot\lib\counterup\counterup.min.js" />
+      <Content Remove="wwwroot\lib\easing\easing.js" />
+      <Content Remove="wwwroot\lib\easing\easing.min.js" />
+      <Content Remove="wwwroot\lib\isotope\isotope.pkgd.js" />
+      <Content Remove="wwwroot\lib\isotope\isotope.pkgd.min.js" />
+      <Content Remove="wwwroot\lib\lightbox\css\lightbox.css" />
+      <Content Remove="wwwroot\lib\lightbox\css\lightbox.min.css" />
+      <Content Remove="wwwroot\lib\lightbox\image\close.png" />
+      <Content Remove="wwwroot\lib\lightbox\image\loading.gif" />
+      <Content Remove="wwwroot\lib\lightbox\image\next.png" />
+      <Content Remove="wwwroot\lib\lightbox\image\prev.png" />
+      <Content Remove="wwwroot\lib\lightbox\js\lightbox.js" />
+      <Content Remove="wwwroot\lib\lightbox\js\lightbox.min.js" />
+      <Content Remove="wwwroot\lib\lightbox\links.php" />
+      <Content Remove="wwwroot\mail\contact.js" />
+      <Content Remove="wwwroot\mail\contact.php" />
+      <Content Remove="wwwroot\mail\jqBootstrapValidation.min.js" />
+      <Content Remove="wwwroot\owlcarousel\assets\ajax-loader.gif" />
+      <Content Remove="wwwroot\owlcarousel\assets\owl.carousel.css" />
+      <Content Remove="wwwroot\owlcarousel\assets\owl.carousel.min.css" />
+      <Content Remove="wwwroot\owlcarousel\assets\owl.theme.default.css" />
+      <Content Remove="wwwroot\owlcarousel\assets\owl.theme.default.min.css" />
+      <Content Remove="wwwroot\owlcarousel\assets\owl.theme.green.css" />
+      <Content Remove="wwwroot\owlcarousel\assets\owl.theme.green.min.css" />
+      <Content Remove="wwwroot\owlcarousel\assets\owl.video.play.png" />
+      <Content Remove="wwwroot\owlcarousel\LICENSE" />
+      <Content Remove="wwwroot\owlcarousel\owl.carousel.js" />
+      <Content Remove="wwwroot\owlcarousel\owl.carousel.min.js" />
+      <Content Remove="wwwroot\waypoints\links.php" />
+      <Content Remove="wwwroot\waypoints\waypoints.min.js" />
+    </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="LICENSE.txt" />
+    <None Remove="Staticpages\img\2e36a01c-fd20-48d7-bd80-952fb1b11d21-A3.jpg" />
+    <None Remove="Staticpages\img\bc78717e-8fb4-4d3a-8244-2ade778accd4-C2.jpg" />
+    <None Remove="Staticpages\img\efce81d0-c586-4357-8b75-46824381f471-aw5.jpg" />
+    <None Remove="Staticpages\img\fbb391a2-69eb-4f6f-9edf-d5e75e76ffeb-af1.jpg" />
+    <None Remove="Staticpages\img\lcd2.jpg" />
+    <None Remove="Staticpages\img\lcd3.jpg" />
+    <None Remove="Staticpages\img\lcd4.jpg" />
+    <None Remove="Staticpages\img\lcd5.jpg" />
+    <None Remove="Staticpages\img\led1.jpg" />
+    <None Remove="Staticpages\img\led2.jpg" />
+    <None Remove="Staticpages\img\led3.jpg" />
+    <None Remove="Staticpages\img\led4.jpg" />
+    <None Remove="Staticpages\img\mcc_panal.jpg" />
+    <None Remove="Staticpages\img\motor_control_centres.jpg" />
+    <None Remove="Staticpages\img\MP1.jpg" />
+    <None Remove="Staticpages\img\MP2.jpg" />
+    <None Remove="Staticpages\img\MP3.jpg" />
+    <None Remove="Staticpages\img\MP4.jpg" />
+    <None Remove="Staticpages\img\MP5.jpg" />
+    <None Remove="Staticpages\img\pcc_panal2.jpg" />
+    <None Remove="Staticpages\img\pcc_panal3.jpg" />
+    <None Remove="Staticpages\img\pcc_panel.jpg" />
+    <None Remove="Staticpages\img\ptz1.jpg" />
+    <None Remove="Staticpages\img\ptz2.jpg" />
+    <None Remove="Staticpages\img\table-fan2.jpg" />
+    <None Remove="Staticpages\img\table_fan1.jpg" />
+    <None Remove="Staticpages\img\table_fan3.jpg" />
+    <None Remove="Staticpages\img\washing machine symbol.jpg" />
+    <None Remove="Staticpages\img\wmr.jpg" />
+    <None Remove="Views\C_Registration\hmnzgruw.x4b~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\img\0229d8e8-d003-48f7-82fc-633708c279d2-ACrepair.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\067122e7-f385-4a4d-b63f-a28cd7a7cdb8-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\06952f37-a61f-49cb-b6f6-6dab98e03ac0-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\0704b4d7-1fbc-4717-926a-834e09f1fb38-symbol1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\071161fc-2307-4616-ae93-be8cd1f81541-Ceiling_Fan1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\07d5abda-8ee2-4e83-bffe-03d2f746b472-led4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\07fd2bd2-e987-4105-8718-c54c39fae28a-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\08448045-47db-46d9-b3bf-fb47c5894908-g5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\139c6542-8629-40d7-aadc-6a32c9154615-table_fan1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\13ce25a9-e5e1-415b-93de-e23ecf8e7803-AC.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\159a2e73-11ea-4546-877e-9afa1e1aaddc-mcc_panal1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\16844f78-41ff-4338-a9c5-1884737c14c9-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\1b9bddd3-9736-49ff-a3b8-43d75519a53b-semiauto1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\1d0e655b-e3ee-438f-b50c-b79613b678b2-led4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\1f82745f-a996-4d60-969d-e8bb95464975-gas1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\210f025b-f512-4621-89dd-7c1426ca7160-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\24c81421-365e-4763-9876-5f9e8ba38af4-A2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\28982b2d-7103-42e1-acdb-3c79b68305dc-FAN.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\29cf32d9-6408-472f-aced-d5abb11ddfc1-DrainCleaningAC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\2a28cdd3-16a5-4441-a634-47a8f26fdddf-auto_panal.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\2d84abbb-15fe-454c-b466-b5c0cb4ccd4b-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\303d63d5-2a50-4e99-bd0f-47dea5553d7a-Condeser_ac1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\31e5bedc-ff7f-42f6-bdcd-a865cb380679-led1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\349c78ad-57f1-4ee6-ae64-302ce2917bec-Dome_c1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\35b920d3-41a8-4700-8de6-2f7f68776f6c-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\3affd44f-e90f-43c4-b176-d9827b31bebf-IP_c1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\3c6e2462-fbd3-4c43-b799-5582f02b9b99-Ele_Geezer1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\3ed95753-446a-4d58-901f-147634a1ca7c-leakage_checkAC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\40d448d4-7456-4bf8-9bcc-db24b3cbe369-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\48c69a1c-add7-4190-aeed-aa1eb01969c5-AC.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\4973463f-9f8a-41fc-89f7-7d3fa2d3841a-Clevel_ac1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\5820306e-bf30-4bf1-b7ae-6cd044b43afb-sw5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\59269534-87b6-472b-a8bf-c92f368d19fd-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\5c8de8d0-b550-4f2b-b853-5ef96681892a-DVR_c1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\60412bc0-d83a-4989-921c-68c30776ce7e-Evap_fan_AC.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\62917583-5281-42f6-86ba-c8b4b0d6af57-gas1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\64b31be5-53ab-4377-bcd9-e209415f5f97-lcd1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\65f2921d-06ca-4304-a23f-991868f76974-inspectionAC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\663d5051-e146-4594-8d32-208766ef1b53-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\67cfe986-ca93-4a69-a131-9995c1a6157a-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\70a2462b-aad9-4dc2-b4dc-7e020618c2e3-leakage_checkAC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\7d3a4e01-b2be-4efe-b400-d622b3359890-Ceiling_Fan1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\805d6c57-f849-49f9-a47a-009e543ecce1-table_fan1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\8263bc0a-42b7-44ef-a9a1-8ea7c72d879f-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\85b85174-2d52-4a3a-af7c-f5dbdc81e9c2-Ele_Geezer1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\87cf6778-aba0-4ade-a5b2-f6d5281bd96a-led2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\87ef935d-afb0-46f1-b93f-04322ad30c64-Clevel_ac1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\87f1b1b1-87c9-40f1-bc55-8143170df315-pcc_panal1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\8a75a8d0-ebd6-419d-ba53-65e559d5e387-g5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\8f559687-2b35-4a6e-bd25-1b842fd89066-mcc_panal1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\90af5fc3-4506-4187-bf6c-1039f464dbe5-AFFC_AC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\95f66ba7-6696-4102-8c85-d4a2accc2038-AirFilter_ac.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\960163b7-0912-4d01-a78a-222a7907c70d-sw5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\989d19fd-479f-4c74-b65a-7b96d7bf57d6-DVR_c1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\9c7fec37-69af-48d5-9591-c71c54cd52ea-AirFilter_ac.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\9d2febab-b2e5-4a13-868c-c2e50cbb4e73-table_fan1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\9fc006a1-2c2f-412f-a117-068ae6e55e9c-inspectionAC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\9fddb0ca-1682-4185-9f02-e622dfe2c018-lcd1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\A1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\a1ec7e89-dbbd-4afd-96f8-4a071affc47f-af1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\A2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\a23c3115-bd47-4819-981f-696497497deb-semiauto1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\A3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\A4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\A5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\a83cd19b-b56c-46b9-b7ff-e6e8e7a5f445-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ac symbol.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ac-banner-01.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ac-banner-2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ac-symbol-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\AC.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ACE1_ac.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ACECoil_AC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ACEFan_AC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ACEFan_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ACrepair.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ad1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ad2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ad3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ad4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ad5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\ada7739b-2681-4b81-9f0b-ffe930ea2b71-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\af1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\af2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\af280a78-d94b-4c05-bec4-40b7a2302e39-Evap_fan_AC.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\af3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\af4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\af5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\afan1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\AFFC_AC1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\AFFC_AC3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\AirFilter_ac.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto7.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto8.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto9.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto_panal.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto_panal4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\auto_panel2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\aw1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\aw2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\aw3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\aw4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\aw5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\b1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\b2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\b21b450d-5b23-4b54-9598-8a475d6e6adc-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\b44f4ef9-45b1-4d4b-b506-9fe2682b2db7-symbol1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\b66f4b2c-eed4-4544-bffb-fee9b7e83ae9-AFFC_AC2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\b686e17b-6f3a-4930-a36d-111745d0bc90-pcc_panal1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\Banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\Banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\Banner3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\Banner4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\Banner5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\Banner6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\bdaebab6-8fd1-457a-9789-3ee7a3588e2d-A1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\img\bg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Staticpages\img\2e36a01c-fd20-48d7-bd80-952fb1b11d21-A3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\bc78717e-8fb4-4d3a-8244-2ade778accd4-C2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\efce81d0-c586-4357-8b75-46824381f471-aw5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\fbb391a2-69eb-4f6f-9edf-d5e75e76ffeb-af1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\lcd2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\lcd3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\lcd4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\lcd5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\led1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\led2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\led3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\led4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\mcc_panal.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\motor_control_centres.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\MP1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\MP2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\MP3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\MP4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\MP5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\pcc_panal2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\pcc_panal3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\pcc_panel.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\ptz1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\ptz2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\table-fan2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\table_fan1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\table_fan3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\washing machine symbol.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Staticpages\img\wmr.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Braintree" Version="5.15.0" />
+    <PackageReference Include="CrystalDecisions.CrystalReports.Engine" Version="1.0.0" />
+    <PackageReference Include="CrystalDecisions.Shared" Version="1.0.0" />
+    <PackageReference Include="CrystalReports.Engine" Version="13.0.4001" />
+    <PackageReference Include="CrystalReports.ReportSource" Version="13.0.4001" />
+    <PackageReference Include="CrystalReports.Shared" Version="13.0.4001" />
+    <PackageReference Include="CrystalReports.Web" Version="13.0.4001" />
+    <PackageReference Include="CrystalReports.Windows.Forms" Version="13.0.4001" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+    <PackageReference Include="Google.Apis.Admin.Directory.directory_v1" Version="1.60.0.2964" />
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
+    <PackageReference Include="ICSharpCode.Decompiler" Version="7.2.1.6856" />
+    <PackageReference Include="itext7" Version="7.2.5" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Jaeger.Thrift" Version="0.3.7" />
+    <PackageReference Include="jQuery.UI.Combined" Version="1.13.2" />
+    <PackageReference Include="MassTransit" Version="8.0.12" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+    <PackageReference Include="RazorPay.Core" Version="1.0.2" />
+    <PackageReference Include="WebGrease" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Downloadss\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\contact.html" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\css\style.min.css" />
+    <None Include="wwwroot\img\about.jpg" />
+    <None Include="wwwroot\img\blog-1.jpg" />
+    <None Include="wwwroot\img\blog-2.jpg" />
+    <None Include="wwwroot\img\blog-3.jpg" />
+    <None Include="wwwroot\img\carousel-1.jpg" />
+    <None Include="wwwroot\img\carousel-2.jpg" />
+    <None Include="wwwroot\img\carousel-3.jpg" />
+    <None Include="wwwroot\img\construction-1.jpg" />
+    <None Include="wwwroot\img\construction-2.jpeg" />
+    <None Include="wwwroot\img\construction-3.webp" />
+    <None Include="wwwroot\img\construction4.webp" />
+    <None Include="wwwroot\img\construction5.png" />
+    <None Include="wwwroot\img\design1.webp" />
+    <None Include="wwwroot\img\design2.jfif" />
+    <None Include="wwwroot\img\design3.jpg" />
+    <None Include="wwwroot\img\design4.jpg" />
+    <None Include="wwwroot\img\designe5.jpg" />
+    <None Include="wwwroot\img\ep1.jfif" />
+    <None Include="wwwroot\img\ep2.jpeg" />
+    <None Include="wwwroot\img\ep3.jfif" />
+    <None Include="wwwroot\img\ep5.jpeg" />
+    <None Include="wwwroot\img\feature.jpg" />
+    <None Include="wwwroot\img\Flowchart Symbols.html" />
+    <None Include="wwwroot\img\Flowchart Symbols_files\basic-symbols.jpg" />
+    <None Include="wwwroot\img\portfolio-1.jpg" />
+    <None Include="wwwroot\img\portfolio-2.jpg" />
+    <None Include="wwwroot\img\portfolio-3.jpg" />
+    <None Include="wwwroot\img\portfolio-4.jpg" />
+    <None Include="wwwroot\img\portfolio-5.jpg" />
+    <None Include="wwwroot\img\portfolio-6.jpg" />
+    <None Include="wwwroot\img\s1.jfif" />
+    <None Include="wwwroot\img\s2moving.webp" />
+    <None Include="wwwroot\img\s3.jpg" />
+    <None Include="wwwroot\img\s4.jfif" />
+    <None Include="wwwroot\img\s4.webp" />
+    <None Include="wwwroot\img\team-1.jpg" />
+    <None Include="wwwroot\img\team-2.jpg" />
+    <None Include="wwwroot\img\team-3.jpg" />
+    <None Include="wwwroot\img\team-4.jpg" />
+    <None Include="wwwroot\img\testimonial-1.jpg" />
+    <None Include="wwwroot\img\testimonial-2.jpg" />
+    <None Include="wwwroot\img\testimonial-3.jpg" />
+    <None Include="wwwroot\img\testimonial.jpg" />
+    <None Include="wwwroot\img\user.jpg" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\lib\counterup\counterup.min.js" />
+    <None Include="wwwroot\lib\easing\easing.js" />
+    <None Include="wwwroot\lib\easing\easing.min.js" />
+    <None Include="wwwroot\lib\isotope\isotope.pkgd.js" />
+    <None Include="wwwroot\lib\isotope\isotope.pkgd.min.js" />
+    <None Include="wwwroot\lib\lightbox\css\lightbox.css" />
+    <None Include="wwwroot\lib\lightbox\css\lightbox.min.css" />
+    <None Include="wwwroot\lib\lightbox\image\close.png" />
+    <None Include="wwwroot\lib\lightbox\image\loading.gif" />
+    <None Include="wwwroot\lib\lightbox\image\next.png" />
+    <None Include="wwwroot\lib\lightbox\image\prev.png" />
+    <None Include="wwwroot\lib\lightbox\js\lightbox.js" />
+    <None Include="wwwroot\lib\lightbox\js\lightbox.min.js" />
+    <None Include="wwwroot\lib\lightbox\links.php" />
+    <None Include="wwwroot\mail\contact.js" />
+    <None Include="wwwroot\mail\contact.php" />
+    <None Include="wwwroot\mail\jqBootstrapValidation.min.js" />
+    <None Include="wwwroot\owlcarousel\assets\ajax-loader.gif" />
+    <None Include="wwwroot\owlcarousel\assets\owl.carousel.css" />
+    <None Include="wwwroot\owlcarousel\assets\owl.carousel.min.css" />
+    <None Include="wwwroot\owlcarousel\assets\owl.theme.default.css" />
+    <None Include="wwwroot\owlcarousel\assets\owl.theme.default.min.css" />
+    <None Include="wwwroot\owlcarousel\assets\owl.theme.green.css" />
+    <None Include="wwwroot\owlcarousel\assets\owl.theme.green.min.css" />
+    <None Include="wwwroot\owlcarousel\assets\owl.video.play.png" />
+    <None Include="wwwroot\owlcarousel\LICENSE" />
+    <None Include="wwwroot\owlcarousel\owl.carousel.js" />
+    <None Include="wwwroot\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\waypoints\links.php" />
+    <None Include="wwwroot\waypoints\waypoints.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\img\c1b56695-18ad-4d0d-8e18-c405ff4f6ae6-ac-symbol-1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\C2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\C3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\c3907cba-9303-442d-9188-585f047b196b-sw1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\C4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\c92901ad-97ce-496e-846d-0cdcd3fdca27-auto_panal.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\camera repair Symbol.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\camera repair Symbol1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Camera.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\camera1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\cd1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\cd2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\cd3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\cd4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\cd5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ceiling_Fan1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ceiling_Fan2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ceiling_Fan3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ceiling_Fan4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\cf8abf47-3c3a-4fd3-84bb-cbecd3d7281c-af1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\clenning_ac1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Clevel_ac1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Clevel_ac2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Clevel_ac3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Condeser_ac1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Condeser_ac2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Condeser_ac3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Condeser_ac4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Condeser_ac5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Condeser_Fan_ac1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\d0db266f-12e1-43ca-9e07-72f29b7c96e5-ptz_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\d13d205e-96a5-4ef6-ad2a-e5b1a054fae3-lcd symbol.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\d5cfeb3d-25be-481d-aa6e-181508f9074b-symbol1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\dbe4f7c6-2409-49dc-b253-b7fb30f79504-AFFC_AC2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ddf432a3-212e-4fbc-b688-ea941f669905-table_fan1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Dome_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\DrainCleaningAC1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\DVR_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\DVR_c2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\e27886d2-f086-484b-83de-aaa3c636441e-ACEFan_AC1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\e398e3a4-4b68-4d39-ac64-b051b18147e5-Dome_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\e540cf32-e62b-4f66-98c0-7bbcbaef25a1-DrainCleaningAC1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\eb07c1e8-90b8-4033-a9a3-693807e2cac6-IP_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ebf1d310-8c14-46b9-b515-8057ac383807-ACEFan_AC2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\eeaf3c2f-f61b-415a-9cae-b23eeea7e291-ACECoil_AC1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ef170983-76f7-4047-a971-8c4a16edcc99-Camera.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\eg1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\eg2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\eg3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\eg4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\eg5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ele_Geezer1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ele_Geezer2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ele_Geezer3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Ele_Geezer4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\EP1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\EP2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\EP3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\EP5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ER.drawio - diagrams.net.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\Evap_fan_AC.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f0150ace-9d58-4e05-91af-3dbd8060f364-AirFilter_ac.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f0858eb3-3e84-4bdf-8153-0fc7a04521f4-Camera.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f0ee6af0-032f-4d86-9058-8e882343d5ab-FAN.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f10fc76c-5da0-49aa-92b6-12872e26b6d5-Condeser_ac1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f3d32f80-6e16-4f1f-b725-fe2a4ffcedaf-ptz_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f5a3c68b-9e60-4abf-9576-79a762231f2c-ad1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f61a5662-0196-4e24-9321-0d8eb9cdb93c-sw1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\f67e8a55-091c-4f7d-b745-45eb9765419e-ACECoil_AC1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\FAN.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\g1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\g2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\g3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\g4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\g5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\gas1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\gas2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\gas3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\inspectionAC1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\inspectionAC2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\inspectionAC3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ip1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ip2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ip3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ip4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ip5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\IP_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\lcd symbol.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\lcd1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\lcd2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\lcd3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\lcd4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\lcd5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\leakage_checkAC1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\led1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\led2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\led2.webp">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\led3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\led4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\mcc_panal1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\mcc_panal2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\mcc_panal3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\mcc_panal4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\MP1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\MP2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\MP3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\MP4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\MP5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pcc_panal1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pcc_panal2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pcc_panal3.webp">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\pcc_panal4.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\profile.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ptz1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ptz2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ptz3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ptz4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ptz5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ptz_c1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\ptz_c2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\rclogo.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\semiauto1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\semiauto2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\sw1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\sw2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\sw3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\sw4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\sw5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\symbol1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\symbol2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\table_fan1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\table_fan2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\table_fan3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\img\table_fan4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

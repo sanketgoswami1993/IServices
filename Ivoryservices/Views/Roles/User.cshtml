@@ -1,0 +1,18 @@
+﻿@model Ivoryservices.Models.user;
+
+@{
+    TempData["User"] = "USER";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    Welcome @TempData["User_name"]
+
+     <div class="container-fluid p-0">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="~/images/ac symbol.jpg" alt="Image">
+                </div>              
+            </div>       
+    </div>
+</div>

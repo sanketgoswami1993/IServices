@@ -1,0 +1,74 @@
+﻿@model Ivoryservices.Models.Login
+
+@{
+      Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Index";
+}
+@*<h1> ONE STOP SOLUTION</h1>*@
+
+<div  class="row">
+    <div class="container-fluid p-0 bg-login">
+   
+    <div class="col-md-4"></div>
+    <div  class="col-md-4 card bg-secondary"  >
+          
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label lbl" ></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label lbl"></label>
+                <input asp-for="Password"  type="password" class="form-control"/>
+                <span asp-validation-for="Password" class="text-danger"></span>
+                    @if (TempData["msg"] != null || TempData["msg"] != "")
+                    {
+                        <h4 style="color:darkred">@TempData["msg"]</h4>
+                    }
+                </div>
+            <div>                
+                <input type="checkbox" name="checkResp" value="true" class="control-label" /> AS ADMIN ?
+            </div>         
+           <div col-md-2>
+                <a class="nav-link text-dark lbl" asp-area="" asp-controller="C_Registration" asp-action="Create">New User?</a>
+           </div>
+                <div col-md-2> 
+                <a class="nav-link text-dark lbl" asp-area="" asp-controller="Visitors" asp-action="ViewCategoryIndex">Visitors?</a>
+                    @if (@ViewBag.loginmsg != null)
+                    {
+                        <h1></h1>
+                    }
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="submit" value="Submit" class="btn btn-primary" />   
+                </div>
+                <div class="col-sm-2">
+                        <a class="btn btn-primary" href="~/index.html">Cancel</a>
+                </div>
+            </div>
+        </form>
+         </div>
+        
+       
+    </div>
+  
+</div>
+
+@*<div>
+    <a asp-action="LoginIndex">Back to List</a>
+</div>*@
+
+@*@if (@ViewBag.Message != null)
+{
+            <script type="text/javascript">
+                $(function () {
+                    alert("@ViewBag.Message")
+                });
+            </script>
+}*@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

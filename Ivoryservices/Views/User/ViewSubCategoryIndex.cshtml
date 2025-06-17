@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Ivoryservices.Models.SubCategory>
+
+
+@*
+    @{
+      Layout = "~/Views/Shared/_Layout.cshtml";
+   // ViewData["Title"] = "Index";
+     }*@
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cat_Id)
+            </th>
+            <th>
+                SUBCATEGORY NAME
+                @Html.DisplayNameFor(model => model.Sub_Name)
+            </th>
+            <th>
+                SUBCATEGORY IMAGE
+                @Html.DisplayNameFor(model => model.Sub_Image)
+            </th>
+             <th>
+                 SUBCATEGORY PRICE 
+                @Html.DisplayNameFor(model => model.Sub_Price)
+          </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>*@
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Cat_Id)
+            </td>*@
+           @* <td>
+                @Html.DisplayFor(modelItem => item.Sub_Name)
+            </td>
+            <td>
+                <img src="~/images/@Html.DisplayFor(modelItem => item.Sub_Image)" alt="Sample Image" width="100px" />
+                @Html.DisplayFor(modelItem => item.Sub_Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_Price)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Sub_Id">Book</a> 
+                <a asp-action="Details" asp-route-id="@item.Sub_Id">Add to cart</a> 
+               <a asp-action="Delete" asp-route-id="@item.Sub_Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@

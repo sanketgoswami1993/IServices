@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    TempData["User"] = "USER";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div>
+    <h1>Hello, @ViewBag.Uname We’ve confirmed your payment. Thank you for shopping with us </h1>
+    <a class="btn btn-primary" asp-controller="Report" asp-route-carts="" asp-action="CreatePdf">Generate Invoice</a>&nbsp; &nbsp;
+</div>
+

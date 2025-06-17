@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Ivoryservices.Models.Feedbacks>
+
+    @{
+       TempData["User"] = "USER";
+       Layout = "~/Views/Shared/_Layout.cshtml";
+        ViewData["Title"] = "GiveFeedbackIndex";
+     }
+@*<p>
+ <a asp-action="GiveFeedback" class="row-cols-md-3">Create New</a>
+</p>*@
+<div class="row">
+    
+<div class="col-md-4"></div>
+<div class="col-md-6 card">
+    <div class="card-body fin">
+            <div class="row">
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.L_Id)
+            </th>*@
+            <th>
+                DESCRIPTION
+                @*@Html.DisplayNameFor(model => model.Description)*@
+            </th>
+            <th>
+                FEEDBACK DATE
+                @*@Html.DisplayNameFor(model => model.F_Date)*@
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.L_Id)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.F_Date)
+            </td>
+           @* <td>
+                <a asp-controller="User" asp-action="GiveFeedbackEdit" asp-route-id="@item.F_Id">Edit</a> |
+                <a asp-controller="User" asp-action="GiveFeedbackDetails" asp-route-id="@item.F_Id">Details</a> |
+                <a asp-controller="User" asp-action="GiveFeedbackDelete" asp-route-id="@item.F_Id">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Ivoryservices.Models.BookingMaster>
+@{
+      Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "BookingIndex";
+ }
+ <h1>BookingIndex</h1>
+<p>
+    <a asp-action="BookingCreate">Create New</a>
+</p>
+
+    <script src="~/js/jquery.dataTables.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+    debugger
+    alert("jhjhj")
+    $("#example").datatable({
+    });
+});
+
+</script>
+<table class="table" id="example">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Cat_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceProvider)
+            </th>
+            *@
+          <th>
+                @Html.DisplayNameFor(model => model.Sub_Name)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Sub_Price)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.tax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.grossTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order_date)
+            </th>
+            <th></th>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.Cat_Id)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.ServiceProvider)
+            </td>*@
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelItem => item.Sub_Name)
+            </th>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tax)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.total)
+            </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.grossTotal)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Order_date)
+                </td>
+          @*  <td>
+                <a asp-action="BookingEdit" asp-route-id="@item.BId">Add to cart</a> |
+                @*<a asp-action="BookingDetails" asp-route-id="@item.BId">Details</a> |
+                <a asp-action="BookingDelete" asp-route-id="@item.BId">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

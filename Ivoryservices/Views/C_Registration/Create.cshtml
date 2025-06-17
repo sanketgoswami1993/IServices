@@ -1,0 +1,209 @@
+﻿@model Ivoryservices.Models.C_Registration;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Create";
+}
+
+<h1>Registraion</h1>
+
+@*<style>
+        body {
+            height: 100vh;
+            background-image: url("https://cdn.pixabay.com/photo/2015/10/30/20/13/boat-1014711_960_720.jpg");
+            color: white;
+            padding: 25px;
+            background-position: center;
+            background-size: cover;
+            background-position: fixed;
+            background-repeat: no-repeat;
+        }*@
+<hr />
+<div class="container">
+    <div class="row" style="font-size:1.5rem">
+   @* <div class="col-sm-6"></div>*@
+   
+<form id="form" asp-action="Create">
+    <div class="row">
+    <div class="col">
+       <label asp-for="Regis_Name" class="control-label lbl">Name</label>
+             <input asp-for="Regis_Name" class="form-control" />
+                <span asp-validation-for="Regis_Name" class="text-danger"></span>
+    </div>
+    <div class="col">
+        <label asp-for="Address" class="control-label lbl"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+  </div>     
+        <div class="row">
+        <div class="col">
+        <label asp-for="City" class="control-label lbl"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+         </div>
+         <div class="col">
+                <label asp-for="State" class="control-label lbl"></label>
+                <input asp-for="State" class="form-control" />
+                <span asp-validation-for="State" class="text-danger"></span>
+         </div>
+         </div>
+            <div class="row">
+                <div class="col">
+                <label asp-for="Roles" class="control-label lbl"></label>
+                <select asp-for="Roles" class ="form-control" asp-items="ViewBag.ROLES">
+                </select>
+                <span asp-validation-for="Roles" class="text-danger"></span>
+            </div>
+           <div class="col">
+                <label asp-for="Mobile_no" class="control-label lbl"></label>
+                <input asp-for="Mobile_no" class="form-control" />
+                <span asp-validation-for="Mobile_no" class="text-danger"></span>
+            </div>
+            </div>
+           @* <div class="col-sm-6">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>*@
+           
+              <div class="row">
+                 <div class="col">
+                <label asp-for="Password" class="control-label lbl"></label>
+                <input asp-for="Password" class="form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="Confirmpassword" class="control-label lbl"></label>
+               
+                 @Html.PasswordFor(m=>m.Confirmpassword,new { @class = "form-control"})
+                <span asp-validation-for="Confirmpassword" class="text-danger"></span>
+            </div>
+            </div>
+           <div class="row">
+            <div class="col">
+                <label asp-for="Email" class="control-label lbl"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="col">
+               <label asp-for="ProfileImg" class="control-label lbl"></label>
+                <input type="file" class="form-control input-validation-error" data-val="false" data-val-required="ProfileImg field is required." id="ProfileImg" 
+                name="ProfileImg" aria-describedby="ProfileImg-error" aria-invalid="false"/>
+                <span asp-validation-for="ProfileImg" class="text-danger"></span>
+            </div>
+            </div>
+                @*<label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status"   style="visibility:hidden"/>
+               @* @Html.CheckBox("Status", new { @class = "form-control" })*@
+                @*@Html.CheckBox("Status", true,new { @class="checkbox" })*@
+                <span asp-validation-for="Status" class="text-danger"></span>
+          
+           
+            <div class="col-md-4">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+         
+    @*<a asp-action="Index">Back to List</a>*@
+ </form>
+   </div>
+@*</div>
+         <div class="col-md-4"></div>
+    </div>
+*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+
+
+@*
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             <div class="col-sm">
+            <div class="form-group">
+                <div class="col-md-6">
+                <label asp-for="Regis_Name" class="control-label"></label>
+                <input asp-for="Regis_Name" class="form-control" />
+                <span asp-validation-for="Regis_Name" class="text-danger"></span>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group">
+                <div class="col-md">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="City" class="control-label"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="State" class="control-label"></label>
+                <input asp-for="State" class="form-control" />
+                <span asp-validation-for="State" class="text-danger"></span>
+            </div>
+            
+            @* <div class="form-group">
+                <label asp-for="Roles" class="control-label"></label>
+                <select asp-for="Roles" class ="form-control" asp-items="ViewBag.ROLES">
+
+                </select>
+                @* @Html.DropDownList("Roles", ViewData["ROLES"] as List<SelectListItem>,new { @class = "form-control"})*@
+               @* <span asp-validation-for="Roles" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="Mobile_no" class="control-label"></label>
+                <input asp-for="Mobile_no" class="form-control" />
+                <span asp-validation-for="Mobile_no" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="Confirmpassword" class="control-label"></label>
+               
+                 @Html.PasswordFor(m=>m.Confirmpassword,new { @class = "form-control"})
+                <span asp-validation-for="Confirmpassword" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                @*<label asp-for="Status" class="control-label"></label>*@
+       @*         <input asp-for="Status"   style="visibility:hidden"/>*@
+               @* @Html.CheckBox("Status", new { @class = "form-control" })*@
+                @*@Html.CheckBox("Status", true,new { @class="checkbox" })*@
+               @* <span asp-validation-for="Status" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>*@
+       @* </form>*@
+   @* </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@**@
+
+
+
+
+             

@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Payment";
+}
+
+<div class="wrapper">
+    <div class="checkout container">
+        <form id="payment-form" method="post" asp-controller="User" asp-action="Create">
+              <label>Enter UPI ID</label>
+              <input type="text"/><br />
+
+
+            <button class="btn btn-success" type="submit"><span>Confirm payment</span></button>
+        </form>
+    </div>
+</div>
+
+

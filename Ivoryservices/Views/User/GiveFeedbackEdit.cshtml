@@ -1,0 +1,62 @@
+﻿@model Ivoryservices.Models.Feedbacks
+
+@{
+    TempData["User"] = "USER";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  @*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">*@
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div>
+    <h4 align="center">Feedback Edit</h4>
+    
+    <div class="row">
+     <div class="col-md-4"></div>
+            <div class="col-md-4 card">
+
+                <div class="card-body fin">
+<div class="row">
+                        @*<div class="col-md-8" style="font-size:1.5rem">*@
+        <form asp-action="GiveFeedbackEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="F_Id" />
+             <input type="hidden" asp-for="L_Id" />
+            @*<div class="form-group">
+                <label asp-for="L_Id" class="control-label"></label>
+                <input asp-for="L_Id" class="form-control" />
+                <span asp-validation-for="L_Id" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" style="font-size:1.5rem"/>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="F_Date" class="control-label">Date</label>
+                <input asp-for="F_Date" class="form-control" style="font-size:1.5rem" />
+                <span asp-validation-for="F_Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" style="font-size:1.5rem"/>
+                &nbsp;
+                 <a asp-action="GiveFeedbackIndex" class="btn btn-primary fin">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+

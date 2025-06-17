@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Ivoryservices.Models.Invoice>
+
+@{
+      Layout = "~/Views/Shared/_Layout.cshtml";   
+}
+
+<p>
+    <a asp-action="Invoice">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+           @* <th>
+                @Html.DisplayNameFor(model => model.L_Id)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Sub_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sub_Name)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Sub_Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order_date)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+@*            <td>
+                @Html.DisplayFor(modelItem => item.L_Id)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_Name)
+            </td>
+@*            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Order_date)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.In_Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.In_Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.In_Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
